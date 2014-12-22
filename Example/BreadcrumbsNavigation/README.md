@@ -1,1 +1,1 @@
-![breadcrumb]('../../Resources/images/breadcrumb.png')
+![breadcrumb]('/Resources/images/breadcrumb.png')
