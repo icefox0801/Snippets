@@ -1,0 +1,9 @@
+@charset "utf-8"
+@import "breadcrumbs";
+
+@include breadcrumbs(nav, 30px);
+
+.nav {
+    font-size: 14px;
+    color: #585858;
+}
