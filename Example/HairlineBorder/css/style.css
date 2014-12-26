@@ -1,0 +1,33 @@
+.hairline
+{
+    position: relative;
+}
+.hairline:before
+{
+    position: absolute;
+    z-index: -1;
+    top: -.5px;
+    left: -.5px;
+
+    width: 200%;
+    height: 200%;
+
+    content: '';
+    -webkit-transform: scale(.5);
+            transform: scale(.5);
+    -webkit-transform-origin: 0 0; 
+            transform-origin: 0 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #999;
+}
+
+.box
+{
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+
+    background: #f2f2f2;
+}

@@ -1,0 +1,13 @@
+@charset "utf-8"
+@import "hairlineBorder";
+
+@include hairlineBorder(hairline, #999);
+
+.box
+{
+    width: 200px;
+    height: 100px;
+    margin: 50px;
+
+    background: #f2f2f2;
+}

@@ -1,25 +1,25 @@
 $anchorPaddingLeft: 10px;
 @mixin breadcrumbs($class:nav, $height:30px, $lineColor:#e3e3e3) {
-    .#{$class} {
-    
-    line-height: $height;
-
-    width: 100%;
-    height: $height;
-
-    border-top: 1px solid $lineColor;
-    border-bottom: 1px solid $lineColor;
-    background: #fff;
-    span
+    .#{$class}
     {
-        display: block;
-        overflow: hidden;
+        line-height: $height;
 
+        width: 100%;
         height: $height;
-        padding-right: 10px;
 
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        border-top: 1px solid $lineColor;
+        border-bottom: 1px solid $lineColor;
+        background: #fff;
+        span
+        {
+            display: block;
+            overflow: hidden;
+
+            height: $height;
+            padding-right: 10px;
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
             a
             {
                 line-height: $height;

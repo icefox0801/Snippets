@@ -1,0 +1,23 @@
+@mixin hairlineBorder($class, $borderColor, $borderWidth:1px) {
+    .#{$class}
+    {
+        position: relative;
+        &:before
+        {
+            position: absolute;
+            z-index: -1;
+            top: -0.5px;
+            left: -0.5px;
+            width: 200%;
+            height: 200%;
+            border-width: $borderWidth;
+            border-color: $borderColor;
+            border-style: solid;
+            content: "";
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+        }
+    }
+}
