@@ -1,0 +1,1 @@
+![closeIcon](/Resources/images/closeIcon.png)

@@ -1,0 +1,48 @@
+@mixin closeIcon($class, $iconSize:10px, $iconWidth:2px, $iconColor:#000) {
+    .#{$class}
+    {
+        position: relative;
+        display: inline-block;
+        width: $iconSize;
+        height: $iconSize;
+        overflow: hidden;
+        &:hover 
+        {
+            &::before, &::after 
+            {
+                background: lighten($iconColor, 20%);
+            }
+        }
+        &::before,&::after
+        {
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            width: 100%;
+            height: $iconWidth;
+            margin-top: -1px;
+
+            content: '';
+
+            background: $iconColor;
+        }
+
+        &::before 
+        {
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg); 
+                -ms-transform: rotate(45deg);
+                 -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+        &::after 
+        {
+            -webkit-transform: rotate(-45deg);
+               -moz-transform: rotate(-45deg); 
+                -ms-transform: rotate(-45deg);
+                 -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+        }
+    }
+}
